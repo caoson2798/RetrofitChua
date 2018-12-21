@@ -6,6 +6,6 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface APIServicesProduct {
-    @GET("/api/json/get/cepQkfspDS?indent=2")
+    @GET("api/json/get/bUximwyGXm?indent=2")
     Call<ProductList> callProductList();
 }

@@ -53,7 +53,7 @@ public class ProductListActivity extends AppCompatActivity {
                         //code here
 
                         for (int i=0; i<productList.getData().size(); i++){
-                            Data data = new Data();
+                           Data data = new Data();
                             data.setCode(Integer.parseInt(productList.getData().get(i).getCode().toString()));
                             data.setWeight(Integer.parseInt(productList.getData().get(i).getWeight().toString()));
                             data.setBasePrice(Integer.parseInt(productList.getData().get(i).getBasePrice().toString()));
@@ -65,8 +65,11 @@ public class ProductListActivity extends AppCompatActivity {
                             data.setName(productList.getData().get(i).getName());
 
                             arrayList.add(data);
-
                         }
+                        adapter.notifyDataSetChanged();
+
+
+                        Log.d("ddddd","d"+response.body());
 
 
                     } else {
